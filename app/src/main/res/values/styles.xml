@@ -1,0 +1,32 @@
+<resources>
+
+
+    <style name="CustomProgressDialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+        <!-- Custom style for TextInputLayout with error color -->
+        <style name="CustomTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <!-- Box stroke color when not focused -->
+            <item name="boxStrokeColor">@color/gray</item>
+            <!-- Box stroke color when error is present -->
+            <item name="boxStrokeErrorColor">@color/red</item>
+            <!-- Hint and error text color -->
+            <item name="hintTextColor">@color/gray</item>
+            <item name="errorTextColor">@color/red</item>
+            <!-- Corner radius -->
+            <item name="boxCornerRadiusTopStart">8dp</item>
+            <item name="boxCornerRadiusTopEnd">8dp</item>
+            <item name="boxCornerRadiusBottomStart">8dp</item>
+            <item name="boxCornerRadiusBottomEnd">8dp</item>
+        </style>
+
+
+
+
+</resources>

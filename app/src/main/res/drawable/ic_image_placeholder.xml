@@ -1,0 +1,16 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Background Rectangle -->
+    <path
+        android:fillColor="#E0E0E0"
+        android:pathData="M2,2h20v20H2z" />
+
+    <!-- Image Icon (mountain and sun) -->
+    <path
+        android:fillColor="#757575"
+        android:pathData="M21,19H3v-2.86l4.35-4.35c.2-.2.51-.2.71,0l3.29,3.29 2.29-2.29c.2-.2.51-.2.71,0L21,16.29V19zM8,11.5c.83,0 1.5-.67 1.5-1.5S8.83,8.5 8,8.5 6.5,9.17 6.5,10 7.17,11.5 8,11.5zM21,7V5H3v9.17l3.88-3.88c.78-.78 2.05-.78 2.83,0L13,13.59l2.88-2.88c.78-.78 2.05-.78 2.83,0L21,10.59V7z" />
+</vector>

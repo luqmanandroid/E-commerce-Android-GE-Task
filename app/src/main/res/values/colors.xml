@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#059669</color>
+    <color name="colorPrimaryDark">#065F46</color>
+    <color name="colorAccent">#94A3B8</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#326CB5</color>
+    <color name="gray">#EBEBEB</color>
+
+
+    <color name="light_green">#ECFDF5</color>
+    <color name="red">#F44336</color>
+
+
+    <color name="light_gray">#e8e8e8</color>
+
+    <color name="gray_dark">#94A3B8</color>
+
+    <color name="green_1">#719175</color>
+    <color name="midBlack">#1b1b1b</color>
+
+    <color name="color_r_f_1">#F7FBFF</color>
+    <color name="color_r_f_2">#DEEBF7</color>
+    <color name="color_r_f_3">#C6DBEF</color>
+    <color name="color_r_f_4">#9ECAE1</color>
+    <color name="color_r_f_5">#6BAED6</color>
+    <color name="color_r_f_6">#4292C6</color>
+    <color name="color_r_f_7">#2171B5</color>
+    <color name="color_r_f_8">#08519C</color>
+    <color name="color_r_f_9">#08306B</color>
+
+
+    <color name="color_mx_t_1">#FFF7EC</color>
+    <color name="color_mx_t_2">#FEE8C8</color>
+    <color name="color_mx_t_3">#FDD49E</color>
+    <color name="color_mx_t_4">#FDBB84</color>
+    <color name="color_mx_t_5">#FC8D59</color>
+    <color name="color_mx_t_6">#EF6548</color>
+    <color name="color_mx_t_7">#D7301F</color>
+    <color name="color_mx_t_8">#B30000</color>
+    <color name="color_mx_t_9">#7F0000</color>
+
+    <color name="color_min_t_1">#FCFBFD</color>
+    <color name="color_min_t_2">#F2F0F7</color>
+    <color name="color_min_t_3">#DADAEB</color>
+    <color name="color_min_t_4">#C5C6E1</color>
+    <color name="color_min_t_5">#BEBCDA</color>
+    <color name="color_min_t_6">#807DBA</color>
+    <color name="color_min_t_7">#6A51A3</color>
+    <color name="color_min_t_8">#54278F</color>
+    <color name="color_min_t_9">#3F007D</color>
+
+
+    <color name="crop_cotton">#81E736</color>
+    <color name="crop_wheat">#449152</color>
+
+
+
+
+
+
+</resources>
