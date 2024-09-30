@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.app.ecom.R
 import com.app.ecom.domain.model.ProductsListResponse
@@ -22,6 +23,8 @@ class ProductListAdapter(private val ProductsList: List<ProductsListResponse>,va
         val ivAttachment: ImageView = view.findViewById(R.id.ivAttachment)
         val tvCat: TextView = view.findViewById(R.id.tvPrice)
         val tvDetail: TextView = view.findViewById(R.id.tvDetail)
+        val iv_fav: ImageView = view.findViewById(R.id.iv_fav)
+        val iv_share: ImageView = view.findViewById(R.id.iv_share)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductsViewHolder {
@@ -48,6 +51,35 @@ class ProductListAdapter(private val ProductsList: List<ProductsListResponse>,va
             intent.putExtra("rating", product.rating.rate)
             intent.putExtra("ratingCount", product.rating.count)
             context.startActivity(intent)
+        }
+
+        if (product.isFav) {
+            holder.iv_fav.setImageResource(R.drawable.ic_fav_s)
+        }else{
+            holder.iv_fav.setImageResource(R.drawable.ic_fav)
+        }
+
+        holder.iv_fav.setOnClickListener {
+            if (product.isFav) {
+                product.isFav = false
+            }else {
+                product.isFav = true
+                Toast.makeText(context, "Product add to favorite", Toast.LENGTH_SHORT).show()
+            }
+
+            notifyDataSetChanged()
+        }
+
+        holder.iv_share.setOnClickListener {
+
+            val sharProduct = "Product Name:  " + product.title +" \n" +
+                    "Product Description: " + product.description +"\n" +
+                    "Product Price: $" + product.price
+
+            val intent = Intent(Intent.ACTION_SEND)
+            intent.setType("text/plain");
+            intent.putExtra(Intent.EXTRA_TEXT,sharProduct);
+            context.startActivity(Intent.createChooser(intent,"share"))
         }
 
 

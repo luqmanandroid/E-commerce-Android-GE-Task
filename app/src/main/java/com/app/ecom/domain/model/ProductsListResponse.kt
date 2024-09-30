@@ -7,8 +7,10 @@ data class ProductsListResponse(
     val description: String,
     val category: String,
     val image: String,
-    val rating: Rating
+    val rating: Rating,
+    var isFav: Boolean = false
 )
+
 data class Rating(
     val rate: Double,
     val count: Int
